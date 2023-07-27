@@ -55,14 +55,18 @@
               <li class="px-5 text-lg text-white font-bold"><a>All fruits</a></li>
             </ul>
           </div>
-          <div class="dropdown lg:hidden">
+          <!-- small device only  -->
+          <div class="navbar-center lg:hidden block ml-1 md:ml-16">
+            <a class="flex justify-center items-center gap-3 text-xl lg:text-4xl font-extrabold text-white">
+              <img src="./images/logo.png" alt="" class="w-10">
+              Fruit Burst</a>
+          </div>
+          <!-- small device only  -->
+          <div class="dropdown lg:hidden ml-16 md:ml-96 ">
             <label tabindex="0" class="btn btn-ghost btn-circle">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
-              </svg>
+              <i class="fa-solid fa-bars text-3xl font-extrabold"></i>
             </label>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 -ml-48">
               <li class="px-5 text-lg font-bold"><a>Home</a></li>
               <li class="px-5 text-lg font-bold"><a>About Us</a></li>
               <li class="px-5 text-lg font-bold"><a>Shop</a></li>
@@ -70,14 +74,14 @@
             </ul>
           </div>
         </div>
-        <div class="navbar-center">
-          <a class="btn btn-ghost text-xl lg:text-4xl font-extrabold text-white">
+        <div class="navbar-center hidden lg:block">
+          <a class="flex justify-center items-center gap-3 text-xl lg:text-4xl font-extrabold text-white">
             <img src="./images/logo.png" alt="" class="w-10">
             Fruit Burst</a>
         </div>
         <div class="navbar-end w-0 lg:w-1/2">
-          <button class="btn btn-ghost btn-circle hidden lg:block">
-            <div class="-ml-[390px] relative">
+          <button class="hidden lg:block">
+            <div class="-ml-[430px] relative">
               <input type="text" placeholder="search here" class="p-4 w-[400px] rounded-3xl">
               <div class="absolute top-2 right-8 text-2xl"><i class="fa-solid fa-magnifying-glass"></i></div>
             </div>
@@ -544,13 +548,14 @@
           <img src="./images/whychoose1.png" class="md:w-full">
         </div>
         <!-- only for small device  -->
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-20 items-center my-10 mx-5 lg:mx-0">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-20 items-center my-10 mx-5 lg:mx-0">
         <!-- left why choose part start  -->
         <div>
           <div class="text-center lg:text-left flex flex-col lg:flex-row gap-5 justify-center items-center mb-5 lg:mb-0">
             <a href="#"><i class="fa-solid fa-phone text-xl p-4 rounded-full bg-slate-200"></i></a>
             <div>
-              <h1 class="text-2xl font-extrabold border-b-4 border-black pb-4">Dedicated Team</h1>
+              <h1 class="text-2xl font-extrabold pb-2">Dedicated Team</h1>
+              <div class="border-b border-solid border-[text_color] h-[1px] w-[100px] mx-auto lg:mx-0"></div>
               <p class="text-lg font-bold text-text_color my-2">Professional employees are there for you to pick<br>the
                 most amazing and fresh fruits.</p>
             </div>
@@ -558,7 +563,8 @@
           <div class="text-center lg:text-left flex flex-col lg:flex-row gap-5 justify-center items-center mb-5 lg:mb-0">
             <a href="#"><i class="fa-regular fa-heart text-xl p-4 rounded-full bg-slate-200"></i></a>
             <div>
-              <h1 class="text-2xl font-extrabold border-b-4 border-black pb-4">Fresh is Best</h1>
+              <h1 class="text-2xl font-extrabold pb-2">Fresh is Best</h1>
+              <div class="border-b border-solid border-[text_color] h-[1px] w-[100px] mx-auto lg:mx-0"></div>
               <p class="text-lg font-bold text-text_color my-2">Professional employees are there for you to pick<br>the
                 most amazing and fresh fruits.</p>
             </div>
@@ -566,7 +572,8 @@
           <div class="text-center lg:text-left flex flex-col lg:flex-row gap-5 justify-center items-center mb-5 lg:mb-0">
             <a href="#"><i class="fa-brands fa-bitbucket text-xl p-4 rounded-full bg-slate-200"></i></a>
             <div>
-              <h1 class="text-2xl font-extrabold border-b-4 border-black pb-4">Gift Certificates</h1>
+              <h1 class="text-2xl font-extrabold pb-2">Gift Certificates</h1>
+              <div class="border-b border-solid border-[text_color] h-[1px] w-[100px] mx-auto lg:mx-0"></div>
               <p class="text-lg font-bold text-text_color my-2">Professional employees are there for you to pick<br>the
                 most amazing and fresh fruits.</p>
             </div>
@@ -582,7 +589,8 @@
             <div class="text-center flex flex-col lg:flex-row-reverse gap-5 justify-center lg:text-end items-center mb-5 lg:mb-0">
               <a href="#"><i class="fa-regular fa-handshake text-xl p-4 rounded-full bg-slate-200"></i></a>
               <div>
-                <h1 class="text-2xl font-extrabold border-b-4 border-black pb-4">Integrated Supplier</h1>
+                <h1 class="text-2xl font-extrabold pb-2">Integrated Supplier</h1>
+                <div class="border-b border-solid border-[text_color] h-[1px] w-[100px] ml-auto mx-auto lg:mr-0"></div>
                 <p class="text-lg font-bold text-text_color my-2">Professional employees are there for you to pick<br>the
                   most amazing and fresh fruits.</p>
               </div>
@@ -590,7 +598,8 @@
             <div class=" text-center flex flex-col lg:flex-row-reverse gap-5 justify-center lg:text-end items-center mb-5 lg:mb-0">
               <a href="#"><i class="fa-solid fa-code text-xl p-4 rounded-full bg-slate-200"></i></a>
               <div>
-                <h1 class="text-2xl font-extrabold border-b-4 border-black pb-4">Sustainable Practice</h1>
+                <h1 class="text-2xl font-extrabold pb-2">Sustainable Practice</h1>
+                <div class="border-b border-solid border-[text_color] h-[1px] w-[100px] ml-auto mx-auto lg:mr-0"></div>
                 <p class="text-lg font-bold text-text_color my-2">Professional employees are there for you to pick<br>the
                   most amazing and fresh fruits.</p>
               </div>
@@ -598,7 +607,8 @@
             <div class="text-center flex flex-col lg:flex-row-reverse gap-5 justify-center lg:text-end items-center mb-5 lg:mb-0">
               <a href="#"><i class="fa-regular fa-thumbs-up text-xl p-4 rounded-full bg-slate-200"></i></a>
               <div>
-                <h1 class="text-2xl font-extrabold border-b-4 border-black pb-4">The Benefits Only</h1>
+                <h1 class="text-2xl font-extrabold pb-2">The Benefits Only</h1>
+                <div class="border-b border-solid border-[text_color] h-[1px] w-[100px] ml-auto mx-auto lg:mr-0"></div>
                 <p class="text-lg font-bold text-text_color my-2">Professional employees are there for you to pick<br>the
                   most amazing and fresh fruits.</p>
               </div>
@@ -618,7 +628,7 @@
             <img src="./images/logo.png" alt="">
             <h1 class="text-3xl lg:text-5xl font-bold text-white">Fruit Burst</h1>
           </div>
-          <ul class="flex flex-wrap justify-between items-center my-5 text-sm lg:text-lg font-bold text-white">
+          <ul class="flex flex-wrap justify-between items-center content-center my-5 text-sm lg:text-lg font-bold text-white">
             <li class="px-2 lg:px-5"><a href="#">Home</a></li>
             <li class="px-2 lg:px-5"><a href="#">About Us</a></li>
             <li class="px-2 lg:px-5"><a href="#">Shop</a></li>
